@@ -1,0 +1,67 @@
+﻿@*
+
+*@
+@{
+}
+@model List<SaldoVacaciones.Models.Empleado>;
+<div class ="row">
+    <div class="col-sm-8 offset-sm-2">
+        <h2>Lista Empleados</h2>
+        <a asp-controller="Empleado" asp-action="NuevoEmpleado" class="btn btn-success">Nuevo Empleado</a>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Id del Puesto</th>
+                    <th>Valor del Documento de Identidad</th>
+                    <th>Nombre</th>
+                    <th>Fecha de Contratacion</th>
+                    <th>Saldo de Vacaciones</th>
+                    <th>Activo</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var item in Model) //modelo de una lista de empleados
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.IdPuesto</td>
+                        <td>@item.ValorDocumentoIdentidad</td>
+                        <td>@item.Nombre</td>
+                        <td>@item.FechaContratacion.ToString("dd/MM/yyyy")</td>
+                        <td>@item.SaldoVacaciones.</td>
+                        <td>@(item.EsActivo ? "SI": "NO" )</td>
+                        <td>
+                            <a 
+                                asp-controller="Empleado" 
+                                asp-action="Editar" 
+                                asp-route-id="@item.Id"
+                                class="btn btn-primary">
+                                Editar</a>
+
+                            <a asp-controller="Empleado"
+                               asp-action="Eliminar"
+                               asp-route-id="@item.Id"
+                               onclick="return confirmar()"
+                               class="btn btn-danger">
+                                Eliminar
+                            </a>
+
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+@section Scripts {
+        <script>
+            function confirmar() {
+                return confirm("¿Está seguro de eliminar al empleado?");
+            }
+        </script>
+}

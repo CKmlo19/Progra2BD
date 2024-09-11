@@ -19,15 +19,16 @@ namespace SaldoVacaciones.Data
         {
             modelBuilder.Entity<Empleado>(tabla =>
             {
-                tabla.HasKey(col => col.IdEmpleado);
-                tabla.Property(col => col.IdEmpleado)
+                tabla.HasKey(col => col.Id);
+                tabla.Property(col => col.Id)
                 .UseIdentityColumn()
                 .ValueGeneratedOnAdd();
 
                 tabla.Property(col => col.Nombre).HasMaxLength(50);
+                tabla.Property(e => e.SaldoVacaciones).HasColumnType("smallint");
             });
 
-            //se cinvierte en una tabla de nombre Empleado
+            //se convierte en una tabla de nombre Empleado
             modelBuilder.Entity<Empleado>().ToTable("Empleado");
         }
     }

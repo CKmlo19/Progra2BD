@@ -2,15 +2,24 @@
 {
     public class Empleado
     {
-        public int IdEmpleado { get; set; }
+        public int Id { get; set; }
 
-        public string Nombre { get; set; }
+        // ID del puesto que ocupa el empleado
+        public int IdPuesto { get; set; }
 
-        public string Correo { get; set; }
+        // Documento de identidad del empleado
+        public required string ValorDocumentoIdentidad { get; set; }
 
-        public int Salario { get; set; }
+        // Nombre completo del empleado
+        public required string Nombre { get; set; }
 
-        public bool Activo { get; set; }
+        // Fecha de contratación, ahora usando DateTime
+        public DateTime FechaContratacion { get; set; }
 
+        // Saldo de vacaciones del empleado
+        public short SaldoVacaciones { get; set; }
+
+        // Estado de actividad del empleado
+        public bool EsActivo { get; set; }
     }
 }
