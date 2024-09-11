@@ -44,20 +44,27 @@ namespace SaldoVacaciones.Controllers
             return View(empleado);  // Si no es válido, devolver el mismo formulario con los errores
         }
 
-        //Para editar los empleados
-        [HttpGet]
-        public async Task<IActionResult> Editar(int id)
+        [HttpGet] // Este método se usará para mostrar la vista de edición.
+        public IActionResult Editar(int id)
         {
-            Empleado empleado = await _appDBContext.Empleados.FirstAsync(e => e.Id == id);
+            var empleado = _appDBContext.Empleados.Find(id);
+            if (empleado == null)
+            {
+                return NotFound();
+            }
             return View(empleado);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Editar(Empleado empleado)
+        [HttpPost] // Este método se usará para manejar el envío del formulario de edición.
+        public IActionResult Editar(Empleado empleado)
         {
-            _appDBContext.Empleados.Update(empleado);
-            await _appDBContext.SaveChangesAsync();
-            return RedirectToAction(nameof(Lista));
+            if (ModelState.IsValid)
+            {
+                _appDBContext.Update(empleado);
+                _appDBContext.SaveChanges();
+                return RedirectToAction("Lista");
+            }
+            return View(empleado);
         }
 
         //Para eliminar los empleados

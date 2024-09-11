@@ -10,6 +10,7 @@
         <h2>Editar Empleado</h2>
         <form asp-controller="Empleado" asp-action="Editar" method="post">
             <input asp-for="Id" type="hidden" />
+
             <!-- Campo para el ID del Puesto -->
             <div class="mb-3">
                 <label>ID del Puesto</label>
@@ -57,5 +58,6 @@
                 <button class="btn-primary" type="submit">Guardar</button>
                 <a asp-controller="Empleado" asp-action="Lista" class="btn btn-warning">Volver</a>
             </div>
+        </form> <!-- <form> necesita ser cerrado aquí -->
     </div>
 </div>
