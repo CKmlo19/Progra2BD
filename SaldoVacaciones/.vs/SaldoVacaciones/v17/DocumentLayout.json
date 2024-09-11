@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\Progra2BD\\SaldoVacaciones\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|c:\\users\\admin\\source\\repos\\progra2bd\\saldovacaciones\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|solutionrelative:models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|c:\\users\\admin\\source\\repos\\progra2bd\\saldovacaciones\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|c:\\users\\admin\\source\\repos\\progra2bd\\saldovacaciones\\views\\empleado\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|solutionrelative:views\\empleado\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|c:\\users\\admin\\source\\repos\\progra2bd\\saldovacaciones\\views\\empleado\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|solutionrelative:views\\empleado\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|c:\\users\\admin\\source\\repos\\progra2bd\\saldovacaciones\\views\\empleado\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|solutionrelative:views\\empleado\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|c:\\users\\admin\\source\\repos\\progra2bd\\saldovacaciones\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|solutionrelative:models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|c:\\users\\admin\\source\\repos\\progra2bd\\saldovacaciones\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9807D13A-0095-4A0B-BE43-86E947BAF8B3}|SaldoVacaciones.csproj|c:\\users\\admin\\source\\repos\\progra2bd\\saldovacaciones\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
@@ -43,8 +43,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-11T19:09:28.291Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -80,52 +79,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Editar.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Progra2BD\\SaldoVacaciones\\Views\\Empleado\\Editar.cshtml",
               "RelativeDocumentMoniker": "Views\\Empleado\\Editar.cshtml",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\Progra2BD\\SaldoVacaciones\\Views\\Empleado\\Editar.cshtml",
               "RelativeToolTip": "Views\\Empleado\\Editar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-11T20:51:16.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Progra2BD\\SaldoVacaciones\\Data\\AppDBContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDBContext.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\Progra2BD\\SaldoVacaciones\\Data\\AppDBContext.cs",
               "RelativeToolTip": "Data\\AppDBContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-11T20:45:04.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Empleado.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Progra2BD\\SaldoVacaciones\\Models\\Empleado.cs",
               "RelativeDocumentMoniker": "Models\\Empleado.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Progra2BD\\SaldoVacaciones\\Models\\Empleado.cs*",
-              "RelativeToolTip": "Models\\Empleado.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Progra2BD\\SaldoVacaciones\\Models\\Empleado.cs",
+              "RelativeToolTip": "Models\\Empleado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-11T20:14:45.321Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Lista.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Progra2BD\\SaldoVacaciones\\Views\\Empleado\\Lista.cshtml",
               "RelativeDocumentMoniker": "Views\\Empleado\\Lista.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Progra2BD\\SaldoVacaciones\\Views\\Empleado\\Lista.cshtml*",
-              "RelativeToolTip": "Views\\Empleado\\Lista.cshtml*",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCAAAAAyAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Progra2BD\\SaldoVacaciones\\Views\\Empleado\\Lista.cshtml",
+              "RelativeToolTip": "Views\\Empleado\\Lista.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwCAAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-11T19:09:35.126Z",
               "EditorCaption": ""

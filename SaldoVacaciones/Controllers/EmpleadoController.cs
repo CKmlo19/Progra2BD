@@ -30,7 +30,7 @@ namespace SaldoVacaciones.Controllers
             return View();
         }
 
-        // POST: Recibir los datos enviados desde el formulario
+        //Recibir los datos enviados desde el formulario
         [HttpPost]
         public async Task<IActionResult> NuevoEmpleado(Empleado empleado)
         {
