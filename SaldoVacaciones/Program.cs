@@ -1,18 +1,8 @@
-using SaldoVacaciones.Data;
-using Microsoft.EntityFrameworkCore;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-
-builder.Services.AddControllersWithViews(); 
-
-builder.Services.AddDbContext<AppDBContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL"));
-});  
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 var app = builder.Build();
 
@@ -24,6 +14,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// prueba commit 2
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -33,6 +25,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Empleado}/{action=Lista}/{id?}");
+    pattern: "{controller=Empleado}/{action=Listar}/{id?}");
 
 app.Run();

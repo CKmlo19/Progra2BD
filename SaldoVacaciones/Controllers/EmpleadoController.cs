@@ -7,74 +7,43 @@ namespace SaldoVacaciones.Controllers
 {
     public class EmpleadoController : Controller
     {
-        private readonly AppDBContext _appDBContext; //para lectura
+        EmpleadoDatos _EmpleadoDatos = new EmpleadoDatos();
 
-        public EmpleadoController(AppDBContext appDBContext)
+        public IActionResult Listar()
         {
-            _appDBContext = appDBContext;
-
+            // la lista mostrara una lista de empleados
+            var oLista = _EmpleadoDatos.Listar(); // llama al metodo de listar y lo muestra
+            return View(oLista);
         }
-
-        //Para listar los empleados
-        [HttpGet]
-        public async Task< IActionResult> Lista()
+        public IActionResult Insertar()
         {
-            List<Empleado> lista = await _appDBContext.Empleados.ToListAsync(); 
-            return View(lista);
-        }
-
-        //Para agregar los empleados
-        [HttpGet]
-        public IActionResult NuevoEmpleado()
-        {
+            // muestra el formulario para insertar
             return View();
         }
-
-        //Recibir los datos enviados desde el formulario
         [HttpPost]
-        public async Task<IActionResult> NuevoEmpleado(Empleado empleado)
+        public IActionResult Insertar(EmpleadoModel oEmpleado)
         {
-            if (ModelState.IsValid)
-            {
-                _appDBContext.Empleados.Add(empleado);
-                await _appDBContext.SaveChangesAsync();
-                return RedirectToAction("Lista");
+            // este otro es para capturar los datos y enviarlo a la base de datos
+
+            //validacion de los campos
+            if (!ModelState.IsValid)
+            { // funcion propia que sirve para saber si un campo esta vacio, true si todo bien, false si hay algo malo
+                return View();
             }
 
-            return View(empleado);  // Si no es válido, devolver el mismo formulario con los errores
-        }
+            var resultado = _EmpleadoDatos.Insertar(oEmpleado);
 
-        [HttpGet] // Este método se usará para mostrar la vista de edición.
-        public IActionResult Editar(int id)
-        {
-            var empleado = _appDBContext.Empleados.Find(id);
-            if (empleado == null)
+            if (resultado == 0)
             {
-                return NotFound();
+                TempData["ShowModal"] = true; // Indicador para mostrar el modal
+                return RedirectToAction("Listar");
             }
-            return View(empleado);
-        }
-
-        [HttpPost] // Este método se usará para manejar el envío del formulario de edición.
-        public IActionResult Editar(Empleado empleado)
-        {
-            if (ModelState.IsValid)
+            else
             {
-                _appDBContext.Update(empleado);
-                _appDBContext.SaveChanges();
-                return RedirectToAction("Lista");
+                ViewBag.ShowErrorModal = true; // Indicador para mostrar el modal
+                //return RedirectToAction("Fracaso");
+                return View();
             }
-            return View(empleado);
-        }
-
-        //Para eliminar los empleados
-        [HttpGet]
-        public async Task<IActionResult> Eliminar(int id)
-        {
-            Empleado empleado = await _appDBContext.Empleados.FirstAsync(e => e.Id == id);
-            _appDBContext.Empleados.Remove(empleado);
-            await _appDBContext.SaveChangesAsync();
-            return RedirectToAction(nameof(Lista));
         }
     }
 }
